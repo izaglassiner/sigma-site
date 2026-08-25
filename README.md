@@ -1,4 +1,4 @@
-# SIGMA - Sistema Integrado de Geração de Mosaicos Aeroespaciais
+# sigma - sistema integrado de geração de mosaicos aeroespaciais
 
 Uma abordagem baseada em fusão de imagens e correspondência com imagens de satélite
 
@@ -58,11 +58,8 @@ python examples/nome_do_exemplo.py
 
 | Pasta / arquivo | Descrição |
 |---|---|
-| `utils/` | Funções e módulos reutilizáveis do projeto — busca e download das cenas, pansharpening, normalização radiométrica e mosaicagem. |
-| `examples/` | Exemplos prontos para uso: scripts já configurados, onde basta alterar os parâmetros (área, datas, resolução etc.) e executar. |
+| `utils/` | Funções e módulos reutilizáveis do projeto. |
+| `examples/` | Exemplos prontos para uso: scripts já configurados, onde basta alterar os parâmetros e executar. |
 | `tutorials/` | Tutoriais em passo a passo explicando como executar os códigos do projeto do início ao fim. |
-| `docs/` | Documentação do projeto e página publicada via GitHub Pages. |
-| `images/` | Imagens utilizadas na documentação. |
-| `limites/` | Arquivos com os limites geográficos do Espírito Santo, usados para recortar o mosaico final. |
 | `workflow-sigma.ipynb` | Notebook demonstrando o fluxo de trabalho completo do projeto. |
 | `requirements.txt` | Lista de dependências Python do projeto. |
