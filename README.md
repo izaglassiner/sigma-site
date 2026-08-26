@@ -1,4 +1,4 @@
-# sigma - sistema integrado de geração de mosaicos aeroespaciais
+# Sigma - Sistema Integrado de Geração de Mosaicos Aeroespaciais
 
 Uma abordagem baseada em fusão de imagens e correspondência com imagens de satélite
 
