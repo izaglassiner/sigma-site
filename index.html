@@ -13,9 +13,8 @@
   <nav class="navbar__inner">
     <a href="#sobre">Sobre</a>
     <a href="#pesquisa">Pesquisa</a>
-    <a href="#resultados">Resultados</a>
     <a href="#repositorio">Repositório</a>
-    <a href="#download">Download</a>
+    <a href="#equipe">Equipe</a>
   </nav>
 </header>
 
@@ -27,13 +26,13 @@
 </section>
 
 <!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-2.png');"></div>
+<div class="section-divider"></div>
 
 <!-- SOBRE -->
 <section id="sobre" class="section">
   <div class="section__inner">
     <h2>Sobre</h2>
-    <p>O grupo SIGMA (Sistema Integrado de Geração de Mosaicos Aeroespaciais) desenvolve um software para automatizar a geração de ortomosaicos do Espírito Santo a partir de imagens do satélite CBERS-4A, por meio de um script em Python. O trabalho está vinculado ao IntegraCAR, o maior projeto de extensão do Ifes, realizado em parceria com a Fapes (Fundação de Amparo à Pesquisa do Espírito Santo) e o IDAF (Instituto de Defesa Agropecuária e Florestal), com o objetivo de integrar e automatizar o Cadastro Ambiental Rural (CAR) no estado.</p>
+    <p>O grupo Sigma (Sistema Integrado de Geração de Mosaicos Aeroespaciais) desenvolve um software para automatizar a geração de ortomosaicos do Espírito Santo a partir de imagens do satélite CBERS-4A, por meio de um script em Python. O trabalho está vinculado ao IntegraCAR, o maior projeto de extensão do Ifes, realizado em parceria com a Fapes (Fundação de Amparo à Pesquisa do Espírito Santo) e o IDAF (Instituto de Defesa Agropecuária e Florestal), com o objetivo de integrar e automatizar o Cadastro Ambiental Rural (CAR) no estado.</p>
 
     <h3>O que são ortomosaicos?</h3>
     <p>Um ortomosaico é uma imagem formada pela união de várias cenas de satélite em um único mapa contínuo, corrigido geometricamente para eliminar distorções de relevo e ângulo de captura. O resultado é uma representação fiel e georreferenciada do território, usada em análises ambientais, mapeamento do uso do solo e fiscalização de áreas rurais em larga escala.</p>
@@ -41,102 +40,136 @@
 </section>
 
 <!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-1.png');"></div>
+<div class="section-divider"></div>
 
 <!-- PESQUISA -->
 <section id="pesquisa" class="section">
   <div class="section__inner">
-    <h2>Pesquisa desenvolvida</h2>
-    <p>O grupo segue atualmente três linhas de pesquisa: a automatização do fluxo de geração de ortomosaicos de baixa resolução, a aplicação de técnicas de pansharpening para aumento da resolução espacial das imagens e o desenvolvimento de métodos de detecção de nuvens em imagens de satélite.</p>
+    <div class="research-intro">
+      <div class="research-intro__text">
+        <h2>Pesquisa desenvolvida</h2>
+        <p>O grupo segue atualmente três linhas de pesquisa: a automatização do fluxo de geração de ortomosaicos de baixa resolução, a aplicação de técnicas de pansharpening para aumento da resolução espacial das imagens e o desenvolvimento de métodos de detecção de nuvens em imagens de satélite.</p>
+      </div>
+    </div>
 
-    <h3>Trabalhos científicos desenvolvidos</h3>
+    <h3>Linhas de Pesquisa</h3>
 
     <article class="paper">
-      <h4>Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening de Imagens CBERS-4A: Aplicação e Evolução Metodológica para o Projeto IntegraCAR</h4>
-      <p>Propõe a aplicação do método CANConv (Content-Adaptive Non-Local Convolution) ao pansharpening de imagens CBERS-4A/WPM no Espírito Santo, com três evoluções metodológicas: particionamento diferenciável com Gumbel-Softmax, atenção cruzada entre as bandas PAN e multiespectral, e uma função de perda adaptada ao sensor WPM. A diversidade de coberturas do território capixaba — mata atlântica, litoral, zonas urbanas e áreas agrícolas — serve de base para validar a coerência semântica do modelo.</p>
-      <a href="resumos/CONVOLUÇÃO NÃO-LOCAL ADAPTATIVA AO CONTEÚDO PARA PANSHARPENING DE IMAGENS CBERS-4A APLICAÇÃO E EVOLUÇÃO METODOLÓGICA PARA O PROJETO INTEGRACAR.pdf" class="btn btn--green" download>
-        Download (PDF)
-      </a>
+      <h4>Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening de Imagens</h4>
+      <div class="paper-content">
+        <p>Uma das linhas de pesquisa do IntegraCAR investiga técnicas avançadas de fusão de imagens orbitais para ampliar a resolução espacial dos produtos multiespectrais utilizados no monitoramento territorial do Espírito Santo. A partir de imagens do satélite CBERS-4A, o projeto explora redes neurais capazes de identificar regiões semanticamente coerentes — como remanescentes de Mata Atlântica, áreas urbanas, litoral e zonas agrícolas — e de adaptar dinamicamente o processo de fusão a cada tipo de cobertura do solo. Essa abordagem permite gerar imagens de alta resolução espacial mais fiéis espectralmente, com potencial de aprimorar a precisão das análises que sustentam o Cadastro Ambiental Rural, favorecendo diagnósticos mais precisos sobre uso e ocupação do solo em todo o estado.</p>
+        <div class="paper-content__image">
+          <img src="images/tomir.jpg" alt="Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening">
+        </div>
+      </div>
+
+      <h4 class="related-work-title">Trabalho relacionado</h4>
+      <h5>Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening de Imagens CBERS-4A: Aplicação e Evolução Metodológica para o Projeto IntegraCAR</h5>
+      <p class="paper-summary">Resumo: Este trabalho propõe a aplicação e evolução do método CANConv (Content-Adaptive Non-Local Convolution) para a tarefa de pansharpening de imagens do satélite CBERS-4A, com foco na região do Espírito Santo. O CANConv emprega agrupamento para capturar a autosimilaridade não-local em imagens de sensoriamento remoto, gerando kernels de convolução adaptativos por meio de partição semântica. Propõem-se três contribuições metodológicas: particionamento diferenciável via Gumbel-Softmax (Soft-SRP), atenção cruzada PAN↔MS na geração de kernels e função de perda customizada para as características espectrais do WPM. A diversidade da cobertura do solo no Espírito Santo — mata atlântica, zonas urbanas, litoral e agricultura — oferece contexto geográfico rico para validar a coerência semântica dos clusters.</p>
+      <div class="paper-actions">
+        <a href="resumos/CONVOLUÇÃO NÃO-LOCAL ADAPTATIVA AO CONTEÚDO PARA PANSHARPENING DE IMAGENS CBERS-4A APLICAÇÃO E EVOLUÇÃO METODOLÓGICA PARA O PROJETO INTEGRACAR.pdf" class="btn btn--green" download>
+          Download (PDF)
+        </a>
+      </div>
+
+      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+
+      <hr>
+    
     </article>
 
     <article class="paper">
-      <h4>Diagnóstico e Aprimoramento de um Fluxo de Pansharpening e Ortomosaico Geográfico com Imagens CBERS-4A/WPM para o Espírito Santo</h4>
-      <p>Investiga falhas no fluxo de pansharpening e mosaico do Espírito Santo, como cores artificialmente alteradas, pixels ausentes e incompatibilidade entre bandas. A partir da auditoria dos metadados do INPE, o fluxo foi reorganizado para preservar a cromaticidade do RGB e usar a banda pancromática apenas como fonte de detalhe espacial.</p>
-      <a href="resumos/DIAGNÓSTICO E APRIMORAMENTO DE UM FLUXO DE PANSHARPENING E ORTOMOSAICO GEOGRÁFICO COM IMAGENS CBERS-4AWPM PARA O ESPÍRITO SANTO.pdf" class="btn btn--green" download>
-        Download (PDF)
-      </a>
+      <h4>Fluxo de Pansharpening</h4>
+      <div class="paper-content">
+        <p>Outra frente de pesquisa do IntegraCAR concentra-se na construção de um pipeline confiável para geração de ortomosaicos geográficos do Espírito Santo a partir de imagens do satélite CBERS-4A, unindo composições coloridas fiéis e fusão de bandas pancromática e multiespectral. O trabalho parte da constatação de que problemas comuns em produtos de sensoriamento remoto — cores artificiais, falhas de leitura e desalinhamento entre cenas — frequentemente têm origem em etapas anteriores da cadeia de processamento, como a seleção e o pareamento correto das bandas de origem. A partir desse diagnóstico, o fluxo foi reestruturado para auditar metadados, preservar a fidelidade espectral das imagens durante a fusão e garantir maior consistência radiométrica entre cenas vizinhas, resultando em produtos mais estáveis e precisos para a composição do mosaico estadual. Essa etapa é essencial para assegurar que as análises territoriais realizadas no âmbito do Cadastro Ambiental Rural se apoiem em uma base cartográfica contínua e confiável.</p>
+        <div class="paper-content__image">
+          <img src="images/gabriele.jpg" alt="Fluxo de Pansharpening e Ortomosaico Geográfico">
+        </div>
+      </div>
+
+      <h4 class="related-work-title">Trabalho relacionado</h4>
+      <h5>Fluxo de Pansharpening para Geração de Ortomosaicos Geográficos do Espírito Santo</h5>
+      <p class="paper-summary">Resumo: Este trabalho apresenta o diagnóstico e o aprimoramento de um fluxo para geração de composições RGB, pansharpening e mosaico geográfico do Espírito Santo com imagens CBERS-4A/WPM. A investigação partiu de falhas como cores artificialmente azuladas ou avermelhadas, pixels aparentemente ausentes, erro de leitura TIFF e incompatibilidade entre cenas multiespectrais e pancromáticas. Verificou-se que a criação do ortomosaico depende de uma cadeia consistente: seleção de cenas com RGB e PAN, alinhamento, pansharpening por cena e composição final. O fluxo foi reorganizado para auditar a banda pancromática, gerar RGBs corretos, reduzir distorções espectrais e preparar produtos mais estáveis para o mosaico.</p>
+      <div class="paper-actions">
+        <a href="resumos/DIAGNÓSTICO E APRIMORAMENTO DE UM FLUXO DE PANSHARPENING E ORTOMOSAICO GEOGRÁFICO COM IMAGENS CBERS-4AWPM PARA O ESPÍRITO SANTO.pdf" class="btn btn--green" download>
+          Download (PDF)
+        </a>
+        <a href="https://github.com/fboldt/sigma/blob/main/examples/example_pansharpening_tiles.py"
+        class="btn btn--green"
+        target="_blank"
+        rel="noopener noreferrer">
+        Código
+        </a>      
+      </div>
+
+      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
     </article>
+
+    <hr>
 
     <article class="paper">
-      <h4>Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A via Script Python</h4>
-      <p>Apresenta a automação da geração de ortomosaicos do Espírito Santo a partir de imagens CBERS-4A, com um script python que estende a biblioteca cbers4asat para busca, download e composição RGB das cenas. A homogeneização radiométrica entre cenas de diferentes datas é feita por um método incremental de ajuste por percentis, mais robusto que as abordagens de normalização global testadas.</p>
-      <a href="resumos/GERAÇÃO DE ORTOMOSAICOS A PARTIR DE IMAGENS DO SATÉLITE CBERS-4A VIA SCRIPT PYTHON.pdf" class="btn btn--green" download>
-        Download (PDF)
-      </a>
+      <h4>Geração de Ortomosaicos</h4>
+      <div class="paper-content">
+        <p>Outra frente de pesquisa do IntegraCAR dedica-se à automação completa do processo de geração de ortomosaicos estaduais a partir de imagens de satélite, transformando um fluxo tradicionalmente manual e trabalhoso em um pipeline Python capaz de operar do início ao fim sem intervenção humana. A solução integra as etapas de busca e download de cenas do catálogo do INPE, composição colorida, correção geométrica e radiométrica das imagens, e costura incremental dos recortes em uma superfície contínua, resolvendo desafios técnicos como o desalinhamento entre bandas espectrais e as diferenças de iluminação e cor entre cenas captadas em datas distintas. O resultado é um mosaico atualizado e recortado automaticamente para os limites do Espírito Santo, oferecendo uma base cartográfica confiável e escalável para subsidiar as análises territoriais do Cadastro Ambiental Rural em todo o estado.</p>
+        <div class="paper-content__image">
+          <img src="images/izabelly.jpg" alt="Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A">
+        </div>
+      </div>
+
+      <h4 class="related-work-title">Trabalho relacionado</h4>
+      <h5>Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A via Script Python</h5>
+      <p class="paper-summary">Resumo: O presente trabalho propõe a automação do processo de geração de ortomosaicos a partir de imagens do satélite CBERS-4A por meio de um script Python. O desenvolvimento se deu a partir do uso da biblioteca cbers4asat, encapsulando e estendendo suas funções de busca, download e composição RGB, além do desenvolvimento de função própria para a formação do mosaico. Os principais desafios enfrentados foram o desalinhamento das bandas espectrais, a presença de pixels sem dados e a heterogeneidade radiométrica entre cenas captadas em épocas e horários distintos. A solução adotou um método de mosaico incremental com ajuste por percentis via correspondência entre cenas.</p>
+      <div class="paper-actions">
+        <a href="resumos/GERAÇÃO DE ORTOMOSAICOS A PARTIR DE IMAGENS DO SATÉLITE CBERS-4A VIA SCRIPT PYTHON.pdf" class="btn btn--green" download>
+          Download (PDF)
+        </a>
+        <a href="https://github.com/fboldt/sigma/blob/main/examples/example_workflow.py"
+        class="btn btn--green"
+        target="_blank"
+        rel="noopener noreferrer">
+        Código
+        </a>      </div>
+
+      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+
     </article>
+
+    <hr>
 
     <article class="paper">
-      <h4>Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico</h4>
-      <p>Desenvolve uma metodologia para identificação automática de nuvens em imagens do Brazil Data Cube, adaptando índices espectrais equivalentes ao NDBI e ao NDCI diante da ausência da banda NIR. O processamento acelerado por GPU permitiu gerar máscaras binárias de nuvens em minutos, reduzindo a ocorrência de falsos positivos causados pela semelhança entre nuvens e telhados claros.</p>
-      <a href="resumos/IDENTIFICAÇÃO DE NUVENS EM IMAGENS DE SATÉLITE PARA GERAÇÃO DE ORTOMOSAICO.pdf" class="btn btn--green" download>
-        Download (PDF)
-      </a>
+      <h4>Identificação de Nuvens</h4>
+      <div class="paper-content">
+        <p>Uma linha de pesquisa complementar do IntegraCAR investiga a identificação automática de nuvens em imagens de satélite, etapa essencial para garantir a qualidade dos ortomosaicos utilizados na automatização do Cadastro Ambiental Rural no Espírito Santo. Diante da ausência de bandas espectrais que normalmente facilitam essa distinção, o projeto explora índices adaptados capazes de diferenciar nuvens de superfícies claras, como telhados de edificações, que costumam gerar falsos positivos em abordagens mais simples baseadas apenas em cor. O processamento é acelerado por GPU, permitindo analisar grandes volumes de imagens em tempo reduzido sem comprometer a precisão da segmentação. Essa etapa de filtragem contribui diretamente para a confiabilidade dos mosaicos estaduais, assegurando que áreas encobertas por nuvens não comprometam as análises territoriais que sustentam a regularização ambiental no estado.</p>
+        <div class="paper-content__image">
+          <img src="images/julia.jpg" alt="Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico">
+        </div>
+      </div>
+
+      <h4 class="related-work-title">Trabalho relacionado</h4>
+      <h5>Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico</h5>
+      <p class="paper-summary">Resumo: Este trabalho apresenta o desenvolvimento de uma metodologia para identificação automática de nuvens em imagens de satélite do Brazil Data Cube (INPE), com o objetivo de apoiar a geração de ortofotomosaicos para automatização do Cadastro Ambiental Rural (CAR) no Espírito Santo. Diante da ausência da banda NIR nas imagens disponíveis, foram adaptados índices espectrais equivalentes ao NDBI e NDCI para diferenciar nuvens de edificações de cor clara. O processamento foi acelerado via GPU, e os resultados preliminares indicam que a combinação dos índices adaptados com o processamento paralelo configura uma solução eficiente e escalável para a geração de máscaras binárias de nuvens com baixa taxa de falsos positivos.</p>
+      <div class="paper-actions">
+        <a href="resumos/IDENTIFICAÇÃO DE NUVENS EM IMAGENS DE SATÉLITE PARA GERAÇÃO DE ORTOMOSAICO.pdf" class="btn btn--green" download>
+          Download (PDF)
+        </a>
+        <a href=""
+        class="btn btn--green"
+        target="_blank"
+        rel="noopener noreferrer">
+        Código
+        </a>
+      </div>
+
+      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+
     </article>
 
-    <p class="note">Trabalhos apresentados no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
   </div>
 </section>
 
 <!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-3.png');"></div>
+<div class="section-divider"></div>
 
-<!-- RESULTADOS -->
-<section id="resultados" class="section">
-  <div class="section__inner">
-    <h2>Resultados</h2>
-
-    <div class="result-row">
-      <div class="result-row__text">
-        <h3>Fluxo de trabalho do ortomosaico</h3>
-        <p>O pipeline desenvolvido conduz de forma automática todas as etapas da geração do ortomosaico — da busca das cenas no catálogo do INPE até a exportação do mosaico final recortado pelos limites do Espírito Santo — sem intervenção humana, resolvendo desafios como desalinhamento de bandas, pixels sem dados e heterogeneidade radiométrica entre cenas.</p>
-      </div>
-      <div class="result-row__images">
-        <img src="images/resultado-fluxo-1.png" alt="Cenas desalinhadas do ortomosaico">
-        <img src="images/resultado-fluxo-2.png" alt="Cenas coloridas do ortomosaico">
-        <img src="images/resultado-fluxo-3.png" alt="Mosaico final recortado pelo Espírito Santo">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="result-row">
-      <div class="result-row__text">
-        <h3>Aplicação da técnica de pansharpening</h3>
-        <p>O ajuste do fluxo de pansharpening passou a preservar a cor original das cenas multiespectrais, usando a banda pancromática apenas para injetar detalhe espacial de alta frequência. Isso reduziu distorções cromáticas e entregou cenas mais estáveis para a etapa de mosaicagem.</p>
-      </div>
-      <div class="result-row__images result-row__images--two">
-        <img src="images/resultado-pansharpening-1.jpeg" alt="Antes do ajuste de pansharpening">
-        <img src="images/resultado-pansharpening-2.jpeg" alt="Depois do ajuste de pansharpening">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="result-row">
-      <div class="result-row__text">
-        <h3>Identificação de nuvens</h3>
-        <p>O uso de índices espectrais adaptados, combinado ao processamento em GPU, permitiu gerar máscaras binárias de nuvens em minutos, reduzindo a ocorrência de falsos positivos causados pela semelhança entre nuvens e telhados claros.</p>
-      </div>
-      <div class="result-row__images result-row__images--two">
-        <img src="images/resultado-nuvens-1.png" alt="Cena de satélite com nuvens">
-        <img src="images/resultado-nuvens-2.png" alt="Máscara binária de nuvens">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-3.png');"></div>
 
 <!-- REPOSITÓRIO -->
 <section id="repositorio" class="section">
@@ -156,40 +189,19 @@
       <div class="repo-card">
         <h3>Workflow automatizado para geração de ortomosaico</h3>
         <p>Rode o código localmente</p>
-        <a href="#" class="btn btn--green">Tutorial</a>
+         <a href="https://github.com/izaglassiner/sigma-site/blob/main/tutoriais/tutorial-workflow.md"
+        class="btn btn--green"
+        target="_blank"
+        rel="noopener noreferrer">
+        Tutorial
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-4.png');"></div>
-
-<!-- DOWNLOAD -->
-<section id="download" class="section">
-  <div class="section__inner">
-    <h2>Download</h2>
-    <div class="download-grid">
-      <div class="download-card">
-        <div class="download-card__header">Mosaico ES Multispectral (8m)</div>
-        <div class="download-card__body">
-          <p>Ortomosaico contínuo do estado do Espírito Santo, gerado a partir das bandas multiespectrais (azul, verde, vermelho e infravermelho próximo) do sensor WPM do satélite CBERS-4A, na resolução espacial original de 8 metros.</p>
-        </div>
-        <a href="#" class="download-card__footer">Download Mosaico Multiespectral (xGb)</a>
-      </div>
-      <div class="download-card">
-        <div class="download-card__header">Mosaico ES Pansharpening (2m)</div>
-        <div class="download-card__body">
-          <p>Versão do mosaico com resolução espacial aprimorada para 2 metros, obtida pela aplicação da técnica de pansharpening sobre as mesmas cenas do mosaico multiespectral, combinando a banda pancromática de alta resolução com a informação espectral das bandas RGB.</p>
-        </div>
-        <a href="#" class="download-card__footer">Download Mosaico Pansharpening (xGb)</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAIXA DE IMAGEM DE SATÉLITE -->
-<div class="satellite-band" style="background-image:url('images/satelite-5.png');"></div>
+<div class="section-divider"></div>
 
 <!-- EQUIPE -->
 <section id="equipe" class="section">
