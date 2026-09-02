@@ -180,7 +180,7 @@ Ao final, dentro da pasta `sigma/images`, você deve encontrar:
 - As composições RGB de cada cena, na subpasta/arquivos `TRUE_COLOR`;
 - O **ortomosaico final do Espírito Santo**, salvo como `NOVO_MOSAICO_SPECTRALMATCH`.
 
-Esse arquivo final é o mosaico contínuo e georreferenciado do estado, gerado a partir da união e do ajuste radiométrico de todas as cenas baixadas.
+Esse arquivo final é o mosaico contínuo e georreferenciado do estado, gerado a partir da união e do ajuste radiométrico de todas as cenas baixadas que pode ser aberto para visualização em softwares SIG, como QGIS e ArcGIS.
 
 ---
 
