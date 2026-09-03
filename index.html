@@ -59,7 +59,7 @@
       <div class="paper-content">
         <p>Uma das linhas de pesquisa do IntegraCAR investiga técnicas avançadas de fusão de imagens orbitais para ampliar a resolução espacial dos produtos multiespectrais utilizados no monitoramento territorial do Espírito Santo. A partir de imagens do satélite CBERS-4A, o projeto explora redes neurais capazes de identificar regiões semanticamente coerentes — como remanescentes de Mata Atlântica, áreas urbanas, litoral e zonas agrícolas — e de adaptar dinamicamente o processo de fusão a cada tipo de cobertura do solo. Essa abordagem permite gerar imagens de alta resolução espacial mais fiéis espectralmente, com potencial de aprimorar a precisão das análises que sustentam o Cadastro Ambiental Rural, favorecendo diagnósticos mais precisos sobre uso e ocupação do solo em todo o estado.</p>
         <div class="paper-content__image">
-          <img src="images/tomir.jpg" alt="Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening">
+          <img src="images/tomir.png" alt="Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening">
         </div>
       </div>
 
@@ -83,12 +83,12 @@
       <div class="paper-content">
         <p>Outra frente de pesquisa do IntegraCAR concentra-se na construção de um pipeline confiável para geração de ortomosaicos geográficos do Espírito Santo a partir de imagens do satélite CBERS-4A, unindo composições coloridas fiéis e fusão de bandas pancromática e multiespectral. O trabalho parte da constatação de que problemas comuns em produtos de sensoriamento remoto — cores artificiais, falhas de leitura e desalinhamento entre cenas — frequentemente têm origem em etapas anteriores da cadeia de processamento, como a seleção e o pareamento correto das bandas de origem. A partir desse diagnóstico, o fluxo foi reestruturado para auditar metadados, preservar a fidelidade espectral das imagens durante a fusão e garantir maior consistência radiométrica entre cenas vizinhas, resultando em produtos mais estáveis e precisos para a composição do mosaico estadual. Essa etapa é essencial para assegurar que as análises territoriais realizadas no âmbito do Cadastro Ambiental Rural se apoiem em uma base cartográfica contínua e confiável.</p>
         <div class="paper-content__image">
-          <img src="images/gabriele.jpg" alt="Fluxo de Pansharpening e Ortomosaico Geográfico">
+          <img src="images/gabriele.png" alt="Fluxo de Pansharpening e Ortomosaico Geográfico">
         </div>
       </div>
 
       <h4 class="related-work-title">Trabalho relacionado</h4>
-      <h5>Fluxo de Pansharpening para Geração de Ortomosaicos Geográficos do Espírito Santo</h5>
+      <h5>Diagnóstico e Aprimoramento de um Fluxo de Pansharpening e Ortomosaico geográfico com Imagens CBERS-4A/WPM para o Espírito Santo</h5>
       <p class="paper-summary">Resumo: Este trabalho apresenta o diagnóstico e o aprimoramento de um fluxo para geração de composições RGB, pansharpening e mosaico geográfico do Espírito Santo com imagens CBERS-4A/WPM. A investigação partiu de falhas como cores artificialmente azuladas ou avermelhadas, pixels aparentemente ausentes, erro de leitura TIFF e incompatibilidade entre cenas multiespectrais e pancromáticas. Verificou-se que a criação do ortomosaico depende de uma cadeia consistente: seleção de cenas com RGB e PAN, alinhamento, pansharpening por cena e composição final. O fluxo foi reorganizado para auditar a banda pancromática, gerar RGBs corretos, reduzir distorções espectrais e preparar produtos mais estáveis para o mosaico.</p>
       <div class="paper-actions">
         <a href="resumos/DIAGNÓSTICO E APRIMORAMENTO DE UM FLUXO DE PANSHARPENING E ORTOMOSAICO GEOGRÁFICO COM IMAGENS CBERS-4AWPM PARA O ESPÍRITO SANTO.pdf" class="btn btn--green" download>
@@ -112,7 +112,7 @@
       <div class="paper-content">
         <p>Outra frente de pesquisa do IntegraCAR dedica-se à automação completa do processo de geração de ortomosaicos estaduais a partir de imagens de satélite, transformando um fluxo tradicionalmente manual e trabalhoso em um pipeline Python capaz de operar do início ao fim sem intervenção humana. A solução integra as etapas de busca e download de cenas do catálogo do INPE, composição colorida, correção geométrica e radiométrica das imagens, e costura incremental dos recortes em uma superfície contínua, resolvendo desafios técnicos como o desalinhamento entre bandas espectrais e as diferenças de iluminação e cor entre cenas captadas em datas distintas. O resultado é um mosaico atualizado e recortado automaticamente para os limites do Espírito Santo, oferecendo uma base cartográfica confiável e escalável para subsidiar as análises territoriais do Cadastro Ambiental Rural em todo o estado.</p>
         <div class="paper-content__image">
-          <img src="images/izabelly.jpg" alt="Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A">
+          <img src="images/izabelly.png" alt="Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A">
         </div>
       </div>
 
@@ -141,7 +141,7 @@
       <div class="paper-content">
         <p>Uma linha de pesquisa complementar do IntegraCAR investiga a identificação automática de nuvens em imagens de satélite, etapa essencial para garantir a qualidade dos ortomosaicos utilizados na automatização do Cadastro Ambiental Rural no Espírito Santo. Diante da ausência de bandas espectrais que normalmente facilitam essa distinção, o projeto explora índices adaptados capazes de diferenciar nuvens de superfícies claras, como telhados de edificações, que costumam gerar falsos positivos em abordagens mais simples baseadas apenas em cor. O processamento é acelerado por GPU, permitindo analisar grandes volumes de imagens em tempo reduzido sem comprometer a precisão da segmentação. Essa etapa de filtragem contribui diretamente para a confiabilidade dos mosaicos estaduais, assegurando que áreas encobertas por nuvens não comprometam as análises territoriais que sustentam a regularização ambiental no estado.</p>
         <div class="paper-content__image">
-          <img src="images/julia.jpg" alt="Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico">
+          <img src="images/julia.png" alt="Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico">
         </div>
       </div>
 
