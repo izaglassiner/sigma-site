@@ -66,13 +66,17 @@
       <h4 class="related-work-title">Trabalho relacionado</h4>
       <h5>Convolução Não-Local Adaptativa ao Conteúdo para Pansharpening de Imagens CBERS-4A: Aplicação e Evolução Metodológica para o Projeto IntegraCAR</h5>
       <p class="paper-summary">Resumo: Este trabalho propõe a aplicação e evolução do método CANConv (Content-Adaptive Non-Local Convolution) para a tarefa de pansharpening de imagens do satélite CBERS-4A, com foco na região do Espírito Santo. O CANConv emprega agrupamento para capturar a autosimilaridade não-local em imagens de sensoriamento remoto, gerando kernels de convolução adaptativos por meio de partição semântica. Propõem-se três contribuições metodológicas: particionamento diferenciável via Gumbel-Softmax (Soft-SRP), atenção cruzada PAN↔MS na geração de kernels e função de perda customizada para as características espectrais do WPM. A diversidade da cobertura do solo no Espírito Santo — mata atlântica, zonas urbanas, litoral e agricultura — oferece contexto geográfico rico para validar a coerência semântica dos clusters.</p>
-      <div class="paper-actions">
+      <div class="paper-actions" style="display:flex; flex-direction:column; align-items:flex-start;">
+        
+      <p class="note">SCHMITE JUNIOR, T. D. Convolução Não-Adaptativa ao Conteúdo para Pansharpening de Imagens CBR-4A: Aplicação e Evolução Metodológica para o Projeto IntegraCAR. Trabalho apresentado em: SIMPÓSIO INTEGRACAR, 1., 2026, Vitória.</p>
+
+      <div class="paper-actions__buttons" style="display:flex; flex-wrap:wrap; gap:12px;">
         <a href="resumos/CONVOLUÇÃO NÃO-LOCAL ADAPTATIVA AO CONTEÚDO PARA PANSHARPENING DE IMAGENS CBERS-4A APLICAÇÃO E EVOLUÇÃO METODOLÓGICA PARA O PROJETO INTEGRACAR.pdf" class="btn btn--green" download>
           Download (PDF)
         </a>
       </div>
 
-      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+    </div>
 
       <hr>
     
@@ -90,19 +94,22 @@
       <h4 class="related-work-title">Trabalho relacionado</h4>
       <h5>Diagnóstico e Aprimoramento de um Fluxo de Pansharpening e Ortomosaico geográfico com Imagens CBERS-4A/WPM para o Espírito Santo</h5>
       <p class="paper-summary">Resumo: Este trabalho apresenta o diagnóstico e o aprimoramento de um fluxo para geração de composições RGB, pansharpening e mosaico geográfico do Espírito Santo com imagens CBERS-4A/WPM. A investigação partiu de falhas como cores artificialmente azuladas ou avermelhadas, pixels aparentemente ausentes, erro de leitura TIFF e incompatibilidade entre cenas multiespectrais e pancromáticas. Verificou-se que a criação do ortomosaico depende de uma cadeia consistente: seleção de cenas com RGB e PAN, alinhamento, pansharpening por cena e composição final. O fluxo foi reorganizado para auditar a banda pancromática, gerar RGBs corretos, reduzir distorções espectrais e preparar produtos mais estáveis para o mosaico.</p>
-      <div class="paper-actions">
-        <a href="resumos/DIAGNÓSTICO E APRIMORAMENTO DE UM FLUXO DE PANSHARPENING E ORTOMOSAICO GEOGRÁFICO COM IMAGENS CBERS-4AWPM PARA O ESPÍRITO SANTO.pdf" class="btn btn--green" download>
-          Download (PDF)
-        </a>
-        <a href="https://github.com/fboldt/sigma/blob/main/examples/example_pansharpening_tiles.py"
-        class="btn btn--green"
-        target="_blank"
-        rel="noopener noreferrer">
-        Código
-        </a>      
+      <div class="paper-actions" style="display:flex; flex-direction:column; align-items:flex-start;">
+        <p class="note">LUCIANO, G. M. M. et al. Diagnóstico e Aprimoramento de um Fluxo de Pansharpening e Ortomosaico Geográfico com Imagns CBERS-4A/WPM para o Espírito Santo. Trabalho apresentado em: SIMPÓSIO INTEGRACAR, 1., 2026, Vitória.</p>
+
+        <div class="paper-actions__buttons" style="display:flex; flex-wrap:wrap; gap:12px;">
+          <a href="resumos/DIAGNÓSTICO E APRIMORAMENTO DE UM FLUXO DE PANSHARPENING E ORTOMOSAICO GEOGRÁFICO COM IMAGENS CBERS-4AWPM PARA O ESPÍRITO SANTO.pdf" class="btn btn--green" download>
+            Download (PDF)
+          </a>
+          <a href="https://github.com/fboldt/sigma/blob/main/examples/example_pansharpening_tiles.py"
+          class="btn btn--green"
+          target="_blank"
+          rel="noopener noreferrer">
+          Código
+          </a>
+        </div>
       </div>
 
-      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
     </article>
 
     <hr>
@@ -119,18 +126,23 @@
       <h4 class="related-work-title">Trabalho relacionado</h4>
       <h5>Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A via Script Python</h5>
       <p class="paper-summary">Resumo: O presente trabalho propõe a automação do processo de geração de ortomosaicos a partir de imagens do satélite CBERS-4A por meio de um script Python. O desenvolvimento se deu a partir do uso da biblioteca cbers4asat, encapsulando e estendendo suas funções de busca, download e composição RGB, além do desenvolvimento de função própria para a formação do mosaico. Os principais desafios enfrentados foram o desalinhamento das bandas espectrais, a presença de pixels sem dados e a heterogeneidade radiométrica entre cenas captadas em épocas e horários distintos. A solução adotou um método de mosaico incremental com ajuste por percentis via correspondência entre cenas.</p>
-      <div class="paper-actions">
-        <a href="resumos/GERAÇÃO DE ORTOMOSAICOS A PARTIR DE IMAGENS DO SATÉLITE CBERS-4A VIA SCRIPT PYTHON.pdf" class="btn btn--green" download>
-          Download (PDF)
-        </a>
-        <a href="https://github.com/fboldt/sigma/blob/main/examples/example_workflow.py"
-        class="btn btn--green"
-        target="_blank"
-        rel="noopener noreferrer">
-        Código
-        </a>      </div>
+      <div class="paper-actions" style="display:flex; flex-direction:column; align-items:flex-start;">
+        <p class="note">COUTINHO, I. C. G. et al. Geração de Ortomosaicos a partir de Imagens do Satélite CBERS-4A via Script Python. Trabalho apresentado em: SIMPÓSIO INTEGRACAR, 1., 2026, Vitória.</p>
 
-      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+        <div class="paper-actions__buttons" style="display:flex; flex-wrap:wrap; gap:12px;">
+          <a href="resumos/GERAÇÃO DE ORTOMOSAICOS A PARTIR DE IMAGENS DO SATÉLITE CBERS-4A VIA SCRIPT PYTHON.pdf" class="btn btn--green" download>
+            Download (PDF)
+          </a>
+          <a href="https://github.com/fboldt/sigma/blob/main/examples/example_workflow.py"
+          class="btn btn--green"
+          target="_blank"
+          rel="noopener noreferrer">
+          Código
+          </a>
+        </div>
+      </div>
+
+      
 
     </article>
 
@@ -148,19 +160,22 @@
       <h4 class="related-work-title">Trabalho relacionado</h4>
       <h5>Identificação de Nuvens em Imagens de Satélite para Geração de Ortomosaico</h5>
       <p class="paper-summary">Resumo: Este trabalho apresenta o desenvolvimento de uma metodologia para identificação automática de nuvens em imagens de satélite do Brazil Data Cube (INPE), com o objetivo de apoiar a geração de ortofotomosaicos para automatização do Cadastro Ambiental Rural (CAR) no Espírito Santo. Diante da ausência da banda NIR nas imagens disponíveis, foram adaptados índices espectrais equivalentes ao NDBI e NDCI para diferenciar nuvens de edificações de cor clara. O processamento foi acelerado via GPU, e os resultados preliminares indicam que a combinação dos índices adaptados com o processamento paralelo configura uma solução eficiente e escalável para a geração de máscaras binárias de nuvens com baixa taxa de falsos positivos.</p>
-      <div class="paper-actions">
-        <a href="resumos/IDENTIFICAÇÃO DE NUVENS EM IMAGENS DE SATÉLITE PARA GERAÇÃO DE ORTOMOSAICO.pdf" class="btn btn--green" download>
-          Download (PDF)
-        </a>
-        <a href=""
-        class="btn btn--green"
-        target="_blank"
-        rel="noopener noreferrer">
-        Código
-        </a>
+      <div class="paper-actions" style="display:flex; flex-direction:column; align-items:flex-start;">
+        <p class="note">LOPES, J. A. N et al. Identificação de Nuvens em Imagens de satélite para Geração de Ortomosaico. Trabalho apresentado em: SIMPÓSIO INTEGRACAR, 1., 2026, Vitória.</p>
+        <div class="paper-actions__buttons" style="display:flex; flex-wrap:wrap; gap:12px;">
+          <a href="resumos/IDENTIFICAÇÃO DE NUVENS EM IMAGENS DE SATÉLITE PARA GERAÇÃO DE ORTOMOSAICO.pdf" class="btn btn--green" download>
+            Download (PDF)
+          </a>
+          <a href=""
+          class="btn btn--green"
+          target="_blank"
+          rel="noopener noreferrer">
+          Código
+          </a>
+        </div>
       </div>
 
-      <p class="note">Trabalho apresentado no 1º Simpósio do IntegraCAR, evento oficial do projeto.</p>
+      
 
     </article>
 
